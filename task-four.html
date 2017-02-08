@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0 ; padding:0 ;}
+        body{background-color: black;}
+        #main{background-color:white;width:60%;height:100%;position: absolute;left:20%;}
+        #main-back{background-color: #ccc;width: 400px;height:200px;position: absolute;top:25%;left:25%;}
+
+        .one-half-circle{width:50px;height:50px;background-color: yellow;border-radius:  0 0 50px 0 ;
+            position: absolute;}
+        .two-half-circle{width:50px;height:50px;background-color: yellow;border-radius: 0 0  0 50px ;
+            position: absolute;right:0;top:0;}
+        .three-half-circle{width:50px;height:50px;background-color: yellow;border-radius: 0 50px 0 0  ;
+            position: absolute;left:0;bottom:0;}
+        .five-half-circle{width:50px;height:50px;background-color: yellow;border-radius:50px 0 0 0  ;
+            position: absolute;right:0;bottom:0;}
+    </style>
+</head>
+<body>
+<div id="main">
+    <p>这个任务主要就是border-radio</p>
+    <div id="main-back">
+        <div class="one-half-circle"></div>
+        <div class="two-half-circle"></div>
+        <div class="three-half-circle"></div>
+        <div class="five-half-circle"></div>
+    </div>
+</div>
+</body>
+</html>
