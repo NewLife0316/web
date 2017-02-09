@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*#top{border-bottom: 2px solid #938e8c;}*/
+        /*#top p{display: inline-block;background-color: #128fdc;}*/
+        /*#date{float:right;}*/
+        /*.top-word{background-color: red;height:61px;width:110px;position: relative;}*/
+        /*#middle{margin: 40px 0}*/
+        /*#middle-right{height:301px;border-top:2px solid red;}*/
+        /*#middle-bottom h1{font-size:16px;}*/
+        /*#middle-bottom p{font-size:12px;line-height:16px;}*/
+        /*#one{color:green;}*/
+        /*#two{color:#d2994f;}*/
+        /*#three{color:#cc7680;}*/
+        /*#middle-bottom-one{width:205px;float: left;margin-right: 30px;}*/
+        /*#middle-bottom-two{width:180px;float: left;margin-right: 30px;}*/
+        /*#middle-bottom-three{width:160px;}*/
+        *{padding:0;margin:0;}
+        body{background-color: gray;}
+        #back{background-color: white;width:980px;height:1386px;margin:0 auto;}
+        #main{margin:0 40px;}
+        .top-word{background-color: red;height:61px;width:110px;position: relative;}
+        .top-word p{color:white;position: absolute;margin-left:4px;bottom:2px;}
+        #top{margin-bottom: 30px;position: relative;}
+        #date {color: red;position: absolute;right:0;bottom:5px;}
+        .line-one{border: 2px #938e8c solid;margin-top: 0;}
+
+        .middle-one{position:relative;}
+        /*#middle-right{float:right;}*/
+        /*上面这句，这里不是用float*/
+        #middle-right{width:203px;position:absolute;top:0;right:0;}
+        /*#middle-right hr{border: 1px #cc8091 solid;}*/
+        #middle-right h2{color:#000000;text-decoration:underline;}
+        #middle-right>p{color:#676767;margin-bottom: 10px;}
+        .num{color: #75b86b;font-size: 116px;position: absolute;top:100px;}
+        .aside_down{position: relative;}
+        .mark_1{font-size: 55px;color:#cc8091;position: absolute;top: 150px;}
+        .mark_2{font-size: 21px;color:#cc8091;position: absolute;top:170px;right:80px;}
+        .mark_3{font-size: 12px;color:#cc8091;position: absolute;top: 195px;right:30px;}
+        #middle-right p{font-size: 12px;color:#676767;}
+
+
+        #middle-bottom div{float: left;margin-right: 30px;margin-bottom:20px;}
+        #middle-bottom{width:641px;margin:20px 0;}
+        #middle-bottom h1{font-size: 16px;}
+        #middle-bottom p{font-size: 12px;}
+        #one{color:green;text-decoration:underline;}
+        #two{color: yellow;text-decoration:underline;}
+        #three{color:darkred;text-decoration:underline;}
+        #middle-bottom-one{width:210px;}
+        #middle-bottom-two{width:190px;}
+
+        .foot{clear:both;}
+        .line-two{width:415px;}
+        /*.foot img{float:right;}*/
+        /*由于这里的foot使用了clear，所以不用float，用position*/
+
+        /*.foot img{position:relative;right:0;top:0;}*/
+        /*.foot h1 {font-size: 42px;color:#11456b;width: 300px;}*/
+        /*.foot-top-word{font-size:33px;color:#11456b;*/
+            /*margin-bottom:20px;width:200px;}*/
+
+
+        .art_1{width:415px;float:left;margin-bottom: 30px;}
+        /*.art_l_up .mark_one p span{font:italic 72px "SimHei";color:#f5e327;font-weight: 700;margin-right: 16px;*/
+        /*background: red;}*/
+        .art_1_up  span{font:italic 72px "SimHei";color:#f5e327;font-weight: 700;margin-right: 16px;
+        }
+        .art_1 .mark_one{font-size: 42px;color:#11456b;margin-bottom:16px;}
+        .art_1 .mark_two{font-size: 33px;color:#11456b;font-weight: 700;}
+
+        .art_1_down{font-size: 12px;padding-top:10px;}
+        .art_l_down p{line-height: 16px;font-size: 12px;}
+        /*.art_l_down span{font-size: 70px;color: #f5e327;float: left;padding: 20px 10px 30px 0;*/
+        /*}*/
+
+        .art_1_down p span{font-size: 70px;color: #f5e327;float: left;padding-right:10px;}
+        .par_two{text-indent:2em;}
+        .par_three{text-indent:2em;}
+        .img_two {float:right;padding:15px;width:226px;height:300px;}
+        .art_r{float: right;width: 458px;}
+        .art_r .art_r_up{position: relative;margin-top: 15px;}
+        .art_r .art_r_up .img_three{width:458px;height: 275px;}
+        .art_r .art_r_up .mark_one{width:458px;height:61px;
+            position:absolute;bottom:3px;background-color:rgba(0,0,0,0.3)}
+        .art_r .art_r_up .describe{position: absolute;bottom: 10px;height: 40px;
+            margin-left: 70px;padding-left: 20px;border-left: 3px solid #72b16a;}
+        .art_r .art_r_up .describe .des_one{font-size: 26px;color: #fff;}
+        .art_r .art_r_up .describe .des_two{font-style: italic;color: #72b16a;}
+        .art_r .art_r_down{width:459px;height: 318px;background: #eeedd6;margin-top: 53px;
+        }
+        .art_r .art_r_down>p{font: 16px/41px "宋体";color: #5a5b5b;margin-left:30px;
+            padding-top:16px;padding-bottom: 20px;}
+        .art_r .art_r_down p .mark_word{font:italic 12px "Microsoft YaHei";}
+        .art_r .art_r_down p .triangle{width: 0;height: 0;border-left:5px solid transparent;
+            border-right: 5px solid transparent;border-bottom: 10px solid #10456b;
+            display: inline-block;}
+        .art_r_down_l{width:260px;height:160px;background: #ea2d70;float: left;}
+        .art_r_down_l span{font-size:110px;color:#ffffff;float: left;padding:10px 0 0 10px;}
+        .art_r_down_l .line{border-left:2px solid #ffffff;height:86px;
+            float: left;
+            margin-top: 35px;
+        }
+        .art_r_down_l .mark_one{
+            font: italic 21px/24px "黑体";
+            color: #fff;
+            margin-left:10px;
+            margin-bottom: 20px;
+        }
+        .art_r_down_l .mark_two{
+            font-size: 12px;
+            color: #fff;
+            margin-left:10px;
+        }
+        .art_r_down_r{
+            float: right;
+            width: 180px;
+            height: 130px;
+            margin-top: 30px;
+        }
+        .art_r_down_r p span{
+            font: 72px "黑体";
+            color: #d45d5c;
+        }
+        .art_r_down_r p .mark_one{
+            float: left;
+            margin: -18px 10px 0 -40px;
+            height: 30px;
+        }
+        .art_r_down_r p .mark_two{
+            float:right;
+        }
+
+        .art_r_down_r p{
+            font:italic 14px/16px "SimHei";
+            color:#5a5b5b;
+        }
+    </style>
+</head>
+<body>
+<div id="back">
+    <div id="main">
+        <div id="top">
+            <div class="top-word">
+            <p>ife.baidu.com</p>
+            </div>
+            <p id="date">2016.03</p>
+            <hr class="line-one">
+        </div>
+        <!--<div class="one">-->
+            <div class="middle-one">
+                <img src="one.jpg">
+                <!--图片应该跟下面的分开，不在一个div中-->
+                <div id="middle-right">
+
+                    <!--<p>about</p>-->
+                    <h2>About</h2>
+                    <!--<p>technologe</p>-->
+                    <h2>Technologe</h2>
+                    <p>About technologe About technologe About technologe</p>
+                    <!--<p>700</p>-->
+                    <p class="num">700</p>
+                    <!--<p>3.2</p>-->
+                    <!--<p>css</p>-->
+                    <!--<p>csssssssss</p>-->
+                    <div class="aside_down">
+                        <p class="mark_1">3.2</p>
+                        <p class="mark_2">css</p>
+                        <p class="mark_3">cssssscsssscss</p>
+                    </div>
+                </div>
+            </div>
+        <!--</div>-->
+        <div id="middle-bottom">
+            <div id="middle-bottom-one">
+                <h1 id="one">What</h1>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                </p>
+            </div>
+            <div id="middle-bottom-two">
+                <h1 id="two">When</h1>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前
+                </p>
+            </div>
+            <div id="middle-bottom-three">
+                <h1 id="three">How</h1>
+                <!--<p>前端前端前端前端<br>-->
+                    <!--前端前端<br>-->
+                    <!--前端前端前端前端前端前端</p>-->
+                <p>前端前端前端前端</p>
+                <p>前端前端前端端前端端</p>
+                <p>前端</p>
+                <!--为什么这里如果在加字就会到下一行，因为设置的宽超过了-->
+            </div>
+            <div class="w_3">
+                <p>What-------40%</p>
+                <p>What-------30%</p>
+                <p>What-------30%</p>
+            </div>
+        </div>
+            <div class="foot">
+                <div class="art_1">
+                    <div class="art_1_up">
+                        <p class="mark_one"><span>THE</span>TECHNOLOGE <br>前端技术领域 <br></p>
+                    </div>
+                    <!--<img src="two.jpg">-->
+                    <!--<h1><span>the</span> technologe of front</h1>-->
+                    <!--<p class="foot-top-word">前端技术领域</p>-->
+
+                    <hr class="line-two">
+                    <div class="art_1_down">
+                        <p><span>前</span>端前端前端前端前端前端前端前端前端前端前端前
+                            端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                            前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前
+                            端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                            端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端
+                            前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前
+                            端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                            端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                            前端
+                        </p>
+                        <img class="img_two" src="three.jpg">
+                        <p class="par_two">端前端前端前端前端前端前端前端前端前端前端前端
+                            前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                            前端前端前端前端前端前端前端前端前端端前端前端前端前端前前端前端前
+                            端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前
+                            端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前
+                            端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                            端前端</p>
+                        <p class="par_three">端前端前端前端前端前端前端前端前端前端前端前端前
+                            端前端前端端前端前端前端前端前端前端前端前端前端前前端端前端前端前
+                            端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前
+                            端前端前端前端前端前端前端端前端</p>
+                    </div>
+                </div>
+                <div class="art_r">
+                    <div class="art_r_up">
+                        <img  class="img_three" src="two.jpg">
+                        <div class="mark_one"></div>
+                        <p class="describe"><span class="des_one">前端技术</span><span class="des_two">&nbsp;&nbsp;前端技术前端技术</span></p>
+                    </div>
+                    <div class="art_r_down">
+                        <p>
+                            <span class="triangle"></span>
+                            <span class="mark_one">前端前端前端前端前端前端 ...................</span>
+                            <span class="mark_word">前端</span>
+                            <br>
+                            <span class="triangle"></span>
+                            <span class="mark_one">前端前端前端前端前端前端 ...................</span>
+                            <span class="mark_word">前端</span>
+                            <br>
+                            <span class="triangle"></span>
+                            <span class="mark_one">前端前端前端前端前端前端 ...................</span>
+                            <span class="mark_word">前端</span>
+                        </p>
+                        <div class="art_r_down_l">
+                            <span>0</span>
+                            <div class="line">
+                                <p class="mark_one">ONE TWO <br> THREE FOUR FIVE</p>
+                                <p class="mark_two">hello world hello world <br> hello world</p>
+                            </div>
+                        </div>
+                        <div class="art_r_down_r">
+                            <p>
+                                <span class="mark_one">“</span>
+                                world hello world
+                                hello world hello world
+                                hello world hello world
+                                hello world hello world
+                                hello world hello world
+                                hello world
+                                <span class="mark_two">”</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>
