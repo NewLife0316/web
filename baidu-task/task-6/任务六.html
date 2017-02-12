@@ -31,17 +31,18 @@
         .middle-one{position:relative;}
         /*#middle-right{float:right;}*/
         /*上面这句，这里不是用float*/
+
         #middle-right{width:203px;position:absolute;top:0;right:0;}
         /*#middle-right hr{border: 1px #cc8091 solid;}*/
-        #middle-right h2{color:#000000;text-decoration:underline;}
-        #middle-right>p{color:#676767;margin-bottom: 10px;}
-        .num{color: #75b86b;font-size: 116px;position: absolute;top:100px;}
-        .aside_down{position: relative;}
-        .mark_1{font-size: 55px;color:#cc8091;position: absolute;top: 150px;}
-        .mark_2{font-size: 21px;color:#cc8091;position: absolute;top:170px;right:80px;}
-        .mark_3{font-size: 12px;color:#cc8091;position: absolute;top: 195px;right:30px;}
+        #middle-right h2{color:#000000;text-decoration:underline;font-variant:small-caps;}
+        #middle-right>p{color:#676767;margin-bottom: 10px;font-style: italic;}
+        #middle-right .num{color: #75b86b;font-size: 120px;position: absolute;top:100px;font-style: italic;}
+        .aside_down{position: relative;font-style:italic;}
+        #middle-right .mark_1{font-size: 55px;color:#cc8091;position: absolute;top: 150px;}
+        #middle-right .mark_2{font-size: 21px;color:#cc8091;position: absolute;top:170px;right:80px;}
+        #middle-right .mark_3{font-size: 12px;color:#cc8091;position: absolute;top: 195px;right:30px;}
         #middle-right p{font-size: 12px;color:#676767;}
-
+        #middle-right .num{}
 
         #middle-bottom div{float: left;margin-right: 30px;margin-bottom:20px;}
         #middle-bottom{width:641px;margin:20px 0;}
@@ -155,7 +156,6 @@
                 <img src="one.jpg">
                 <!--图片应该跟下面的分开，不在一个div中-->
                 <div id="middle-right">
-
                     <!--<p>about</p>-->
                     <h2>About</h2>
                     <!--<p>technologe</p>-->
