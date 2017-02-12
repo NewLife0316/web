@@ -1,0 +1,109 @@
+*{padding:0;margin:0;}
+section p{color:black;}
+#headline{position: relative;width:200px;height:50px;}
+header{position: relative;}
+header p{font-size: 20px;margin:0 0 10px 100px;position:absolute;bottom:2px;color: black;}
+header ul{position: absolute;right:20px;bottom:13px;}
+header ul li{display:inline;}
+/*如何调节a里面的间距*/
+a:link{text-decoration: none;}
+header div a:link{font-size: 12px;margin-right: 20px;color:black;}
+/*#section-1{background-image:url(pic01.jpg);}*/
+#main{background-image:url(pic01.jpg);height:650px;background-size:1349px;}
+#main-word{position:absolute;top:300px;left:100px;font-size:35px;color:white;}
+#main-word p {width:280px;font-size: 20px;padding:20px 0 50px 0;}
+#main-word a{background-color:indianred;color:white;padding:10px 100px;font-size:30px;  }
+
+/*这里只需要定义好一个的样式，用class*/
+.icon{float:left;width:180px;height:200px;text-align:center;
+    padding:0 70px;}
+.icon p{text-align:center;}
+/*如何定义p后面的横线？就是用border*/
+#icon-word{padding-right: 70px;}
+.icon-whole{margin:25px 0 ;}
+
+#back{clear:both;width:1349px;height:350px;background-color: #eee;text-align:center;}
+#back img{margin-top:60px;}
+#back p {font-size: 50px;color:darkgray;padding-top:40px;}
+section #map{background-image:url(pic02.jpg);height:340px;background-size:1349px 340px;}
+#map h3,p{text-align: center;color:white;padding:40px 0 0 0;}
+#map-word{margin-top:-20px;}
+.line{border:2px solid white;margin:4px auto;width:30px;}
+select,input,#find{float:left;width:250px;height:40px;margin-right:40px;margin-top:40px;}
+#map-center{margin-left:100px;}
+
+/* 如何将select设置成居中*/
+
+#section-5{
+    width: 100%;height: 600px;background-color: #EDEAEA;text-align: center;font-size: 0;}
+#section-5 .cell{
+    display: inline-block;width: 20%;height: 400px;position: relative;top: 50px;box-sizing: border-box;
+}
+#section-5 .cell .mes p:first-child{
+    font-size: 14px;color: #44403F;margin: 0;}
+#section-5 .cell .mes p:last-child{
+    font-size: 12px;color: #B3AFAC;}
+#section-5 .cell:nth-child(2)>.mes p:first-child{
+    font-size: 24px;text-indent: 30px;letter-spacing: 30px;}
+
+
+
+
+#four{width:1349px;height:450px;background-color: #eee;}
+.border{border:1px solid darkgray;}
+.four-one{float:left;text-align: center;}
+.four-one p{color:darkgray;}
+/*如何设置居中*/
+
+/*#back-two{background-image:url(pic07.jpg);background-repeat:no-repeat;width:904px;height:565px;}*/
+#back-two{background:url(pic07.jpg);width:900px;height:565px;}
+/*看上这条，有简写模式*/
+/*#back-two{background:url(pic07.jpg);width:904px;height:565px;}*/
+#back-two p{color:white; text-align: center;padding:0;font-size: 26px;}
+#back-two p:first-child{padding-top:120px;font-size: 70px;}
+#back-two #big{font-size:160px;padding:0;margin:0;}
+#big h1{font-size:400px;}
+
+#section-three{position:relative;}
+#right{position:absolute;top:0;right:0;width:445px;text-align:center;height:565px;}
+.right-middle h5{font-size: 20px;font-weight:300;}
+.right-middle h5 span{color:red;}
+#right .right-middle{width:445px;height:565px;display:table-cell;vertical-align:middle;
+}
+.right-middle p {line-height:50px;text-align:left;margin:10px 60px 60px 60px;padding:0;
+    font-size: 14px;color:darkgray;}
+.right-middle a{border:red solid 1px;padding:10px 30px;color:red;font-size:14px;}
+
+#pic-left{float:left;text-align:center;}
+#pic-left .move-line{display:block;width: 50px;height: 20px;margin:20px auto;
+    border-top: 2px solid darkgray;}
+.pic{width:450px;height:518px;background-color:indianred;float:left;}
+.pic p{color:white;font-size:20px;padding:0;margin:0;}
+.pic a{color:white;border:white solid 1px;padding:10px 50px;display:inline-block;}
+
+.pic-two{width:450px;height:518px;float:left;}
+.pic-two p {color:black;font-size:20px;padding:0;margin:0;}
+.pic-two a{color:red;border:red solid 1px;padding:10px 50px;display:inline-block;}
+.pic-middle{width:450px;height:518px;display:table-cell;vertical-align:middle;}
+#pic-pic{float:right;}
+
+#foot{clear:both;}
+#foot-whole{padding-top:120px;}
+#foot-title{margin:0 auto;width:450px;}
+#foot-title p:first-child{font-size: 20px;color:black;}
+#foot-title p{text-align: center;font-size: 14px;color:darkgray;width:450px;}
+#foot-main{margin:50px 100px;}
+.foot-left{float:left;width:400px;height:420px;margin-top:10px;}
+.foot-left p{width:300px;text-align:left;margin-bottom: 16px;padding-top:0;}
+.foot-left-one{margin-bottom:80px;}
+.foot-left-one p{color:darkgray;}
+.foot-left-one p:first-child{font-size:20px;color:black;}
+.foot-left p:first-child{padding-top:0;}
+.foot-left{font-size: 12px;color:red;}
+input[type="text"],[type="submit"]{height: 40px;width: 300px;font-size: 14px;color: #4E3A4F;
+    box-sizing: border-box;margin:10px;padding: 10px;border: 0;outline: 0;
+    background-color: #E3E3E3;}
+textarea{margin: 10px;padding: 10px;color: #4E3A4F;border: 0;background-color:#E3E3E3;
+    width: 600px;}
+input[type="submit"] {width:620px;}
+/*#foot-left{float:left;}*/
