@@ -6,52 +6,47 @@
     <link href="table.css" type="text/css" rel="stylesheet">
     <style>
         *{padding:0;margin:0;}
-        body{background-color: black;}
-
-        .top-right{height:70px;background-color:#333333;margin:0 30px;}
-        .top-right ul{float:right;}
-        .top-right ul li{float: right;margin:20px;}
+        body{background-color: black;font-family:'Microsoft YaHei';}
         a:link{ text-decoration:none;color:white;}
-        aside{float:right;}
-        .back-bottom{width:400px;padding:20px;background-color: #72b16a;margin:0 60px;}
-
-        #word,h3 {color:gray;text-indent:0;}
-        .back-word{background-color:#eee;margin:0 30px;
-
-        }
-        .back{margin:0 30px;margin-bottom:20px;;padding:20px;background-color: #72b16a;
-            width:720px;
-
-        }
+        h3 {color:gray;text-indent:0;}
         p{text-indent:2em;}
-        .photo{border: 1px solid;width:120px;margin:20px;text-align:center}
-        .photo p{text-align:center;text-indent:4px;}
-        .back ul li{display: block;float: none;}
-        table{width:100%;}
-        table th{color:white;background-color: black;}
-        #tab td{background:gainsboro;}
-        form div .word{float:left;width:35%;text-align: right;padding-right: 15px;}
-        /*上面这句话里不能加上margin，不然就会乱。*/
-        form div{margin:15px 0;}
-        .submitButton{width:100%;background-color: skyblue;border-radius: 12px;height:50px;
+
+        header {height:70px;background-color:#333333;margin:0 30px;}
+        header ul{float:right;}
+        header ul li{float: right;margin:20px;}
+
+        aside{float:right;padding:10px;}
+        aside [type="text"],[type="password"]{width:180px;}
+        aside .sidebar{width:400px;padding:20px;background-color: #72b16a;margin:0 60px;}
+        aside .sidebar form div .word{float:left;width:35%;text-align: right;padding-right: 15px;}
+        aside .submitButton{width:100%;background-color: skyblue;border-radius: 12px;height:50px;
             font-size: 20px;color: white;border:none}
+        aside form div{margin:15px 0;}
+        .main{background-color:white;margin:0 30px;padding:10px;}
+        .main-passage{margin:0 30px 20px 30px;padding:20px;background-color: #72b16a;width:720px;}
+        .main-passage .photo{border: 1px solid;width:120px;margin:20px;text-align:center}
+        .main-passage .photo p{text-align:center;text-indent:4px;}
+        .list li{float: none;margin:5px 20px;}
+        .main-passage table{width:100%;}
+        .main-passage table th{color:white;background-color: black;}
+        .main-passage #tab td{background:gainsboro;}
+
+
+
 
     </style>
 </head>
 <body>
 <header>
-    <div class="top-right">
         <ul>
             <li><a href="#">导航链接一</a></li>
-            <li><a href="#">导航链接一</a></li>
+            <li><a href="#">导航链接2</a></li>
             <li><a href="#">导航链接一</a></li>
             <li><a href="#">导航链接一</a></li>
         </ul>
-    </div>
 </header>
 <aside>
-    <!--<div class="back">-->
-        <div class="back-bottom">
+        <div class="sidebar">
             <h2>侧栏注册窗口标题</h2>
             <form>
                 <div>
@@ -94,29 +89,30 @@
         </div>
     <!--</div>-->
 </aside>
-<div class="back-word">
-    <div class="back">
+<div class="main">
+    <div class="main-passage">
         <h2>文章一级标题</h2>
         <h3>文章二级标题</h3>
         <p id="word">文章作者 文章发表时间</p>
-        <p>这个段落很长，这个段落很长，这个段落很长，<br>这个段落很长，这个段落很长，这个段落很长，
-            <a href="#">这里有一个链接</a>这个段落很长，这个段落很长，
+        <p>这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，
+            <a href="#">这里有一个链接</a>这个段落很长，这个段落很长.
+            这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，
         </p>
-        <img src="phone.png" id="photo">
+        <img src="phone.png">
         <p>这个段落很长，这个段落很长，这个段落很长，这个段落很长，<strong>这是粗体</strong></p>
     </div>
 
-    <div class="back">
+    <div class="main-passage">
         <h2>另一篇文章一级标题</h2>
         <h2>文章二级标题</h2>
-        <ul id="liebiao">
+        <ul class="list">
             <li>列表项目一</li>
             <li>列表项目一</li>
             <li>列表项目一</li>
         </ul>
     </div>
 
-    <div class="back">
+    <div class="main-passage">
         <h2>图片</h2>
         <div class="photo">
             <p>好看的图片</p>
@@ -132,14 +128,7 @@
         </div>
     </div>
 
-    <div class="back">
-        <h2>最后一篇文章一级标题</h2>
-        <p>文章作者文章发布时间</p>
-        <ol>
-            <li>排名1</li>
-            <li>排名2</li>
-            <li>排名3</li>
-        </ol>
+    <div class="main-passage">
         <p>用table做的表格(border="1")看起来有层叠的效果，不好看。下面将用边框样式做一个表格</p>
         <table id="table">
             <tr>
