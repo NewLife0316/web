@@ -1,0 +1,153 @@
+*{margin:0;padding:0;}
+/*body{background-color: black;}*/
+a:link{text-decoration: none;}
+header{height:60px;background-color: skyblue;}
+#top-logo{float: left;padding:10px 0 0 60px;}
+/*上面这个语句是，给logo定位。这个页面不用position*/
+#entry{float: right;padding:10px 120px 0 0;}
+#entry a{margin:20px;color:white;}
+#entry input{width:300px;height:30px;border-radius:25px;border:none;padding-left:5px;
+color:darkgray;font-size: 16px;}
+/*上面三句是用来设置输入框和登陆*/
+
+html,body,h1,h2,h3,h4,h5,p,ol,ul,li,form,
+pre,code,address,fieldset,blockquote{padding:0;margin:0;font-size: 100%;font-weight: normal;}
+ol{margin-left:1.4em;list-style:decimal;}
+ul{margin-left:1.4em;list-style:square;}
+img{border:0;}
+
+
+#main-left{background-color:#2a2e4d;float: left;
+    width:20%;
+    height:790px;
+    /*width:300px;*/
+}
+#tab-photo{float:left;width:260px;padding:20px 0 0 60px;}
+/*给左边导航定位，宽。不给元素定高*/
+
+#circle{border:2px solid #5a5b5b;width:60px;height:60px;border-radius:30px;
+    float:left;text-align: center;line-height: 58px;
+    }
+/*这两个圆的定位就是靠line-height*/
+#circle span{width:50px;height:50px;background:#5a5b5b;
+border-radius:25px;display: inline-block;vertical-align: middle;}
+#tab-photo h1{float:left;padding:20px 0 0 20px;color:#ecebec;font-size: 16px;}
+/*#tab-photo{height:100px;}*/
+/*下面两句是设置粉丝*/
+#tab-word{float:left;color:#eee;width:240px;}
+.tab-left {float:left;display: inline-block;margin:20px;}
+/*设置导航表*/
+
+#tab{color:#eee;font-size:12px;}
+ul{list-style: none;}
+#file{
+    padding:5px 0 0 60px;
+    width:230px;background: #5a5b5b;overflow:hidden;margin-left:-20px;}
+/*这里要注意，给哪个元素设置背景颜色时要注意margin padding这些间隔*/
+#file li{padding:10px;}
+#person {margin:20px 0 0 60px;}
+#person ul,li{padding:20px 0;}
+/*下面是设置宽，位置 颜色*/
+#main-right{float:left;width:80%;}
+#main-right-top ul{margin:5px 0 5px 30px;}
+#main-right-top ul li{display: inline;color:darkgray;letter-spacing: 4px;}
+
+.section-back{background: #eee;width:80%;float:left;
+}
+/*下面是设置表的宽，颜色，外边距*/
+#tab-one{width:87%;float:left;color:darkgray;display: inline-block;
+    background-color: white;border:1px solid #969696;
+    margin:20px 70px 10px 70px;
+}
+#tab-mark,#tab-man,#tab-date,#tab-persons,#sub{float:left;padding:20px 0 0 40px;}
+#tab-one p,select{display:inline-block;}
+/*下面这几句话就相当于上面那一句话，简写很重要*/
+/*#tab-mark p,select{display:inline;}*/
+/*.tab-man-one p,select{display:inline;}*/
+/*#tab-date p ,select{display:inline;}*/
+/*#tab-peoples p ,select{display:inline;}*/
+/*#tab-date{background: red;}*/
+
+#tab-one p{padding-right:5px;}
+#tab-one select{padding:5px;}
+#tab-man select{width:150px;margin-right:20px;}
+#tab-man-one{margin-top: 5px;}
+#tab-date input{width:100px;padding:5px;}
+#tab-date select{padding-left:17px;}
+#tab-persons{padding:0;margin:0;}
+#tab-persons select {padding-left:10px;
+    padding-right: 10px;
+}
+#tab-persons #tab-persons-two{padding-left:20px;}
+#tab-persons p{padding-left:40px;}
+#tab-persons select{margin-bottom:20px;}
+#sub input{background-color: #1e90ff;padding:5px 15px;color:white;border:none;
+   float: right;margin-top:-40px;
+}
+/*整个宽是829，外边距70 给没个格子定宽为100 方向格宽度为35 间隙为2*/
+#tab-two{
+    clear:both; width:87%;height:auto;
+    margin:0 111px 0 70px;
+
+    font-size: 12px;}
+/*看看上面的margin可以删掉什么？有的设置了没有什么效果*/
+#tab-two .direction,.price,#history{display:inline-block;height:70px;background-color:white;
+border: 1px solid #969696;}
+.direction {width:35px;margin-bottom:2px;float: left;margin-right:5px;}
+.price{width:120px;text-align: center;vertical-align:top;padding:0;float: left;margin-right:5px;}
+#history{width:90px;vertical-align:top}
+#history p{text-align:center;margin-top:5px;}
+/*上面两句的vertical-align:top很重要，这几个div会出现虽然在一行但是上下高度不同，用这个使一样高*/
+.price p{padding-top:15px;}
+#history p{line-height: 60px;}
+
+#tab-three{width:90%;height:auto;
+    /*margin:10px 0 40px 0;*/
+    margin:10px 70px 40px 70px ;
+    font-size: 12px;}
+#tab-three h2{margin-bottom: 2px;}
+#tab-three .number{display:inline-block;}
+/*一共有4个div，每个183*/
+.number{width:22%;background-color:#969696;height:100px;float: left;
+    margin-right:28px;
+}
+.number p{margin-left:10px;margin-top:20px;font-size:16px; }
+.number span{display: inline-block; width:90px;height:60px;background-color:palegreen;
+margin-top:20px;margin-right:15px;float: right;}
+
+#section-5{width:500px;border:1px solid #969696;border-radius:5px;margin:120px 70px 0 70px ;
+}
+#section-5 p{height:50px;background-color:darkgray;line-height:50px;
+    border-bottom:1px solid;padding-left: 20px;}
+#play{margin:0;}
+#play ul li{text-align: center}
+#play #only{border:1px solid #969696;border-bottom:none;}
+#play ul{margin-left:19px;margin-top:15px;padding:0;
+    /*line-height:0;*/
+}
+#play ul li{text-decoration:none;display:inline-block;margin-bottom:2px;
+    background-color: darkgray;width: 75px;margin-left:2px;}
+#table-border{border:1px solid #969696;padding:30px;margin:0 20px 20px;}
+#table ,td{border:1px solid ;border-collapse:collapse}
+#table tr,td{padding:18px;font-size: 12px;line-height:0;}
+
+#section-6{width:390px;border:1px solid #969696;float: right;border-radius: 4px;
+    margin:20px 70px 0 0 ;}
+#section-6-top{height:50px;background-color:darkgray;line-height:50px;
+    border-bottom:1px solid #969696;padding-left: 20px;}
+#section-6-main{margin:10px 0 0 60px;}
+#section-6-main-top{margin:2px;}
+#section-6-main-top h5,#section-6-main-middle-price h5 ,#section-6-main-middle-person h5,#section-6-main-bottom h5{color:#969696;}
+#section-6-main-middle{border-bottom:2px solid #969696;border-top:1px solid #969696;}
+#section-6-main-middle-price{width:100px;border-right:1px solid #969696;display:inline-block;}
+#section-6-main-middle-person{display:inline-block;margin-left:20px;}
+
+#section-6-main-bottom{padding-bottom:135px;}
+input [type="checkbox"]{display: inline;}
+#section-6-main-bottom-word{display: inline-block;}
+#submit{float: right;padding:3px 10px;background-color: #128fdc;color:white;
+border:none;margin-right:40px;margin-bottom:30px;}
+
+
+
+
