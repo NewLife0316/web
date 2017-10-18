@@ -23,13 +23,13 @@
             font-size: 20px;color: white;border:none}
         aside form div{margin:15px 0;}
         .main{background-color:white;margin:0 30px;padding:10px;}
-        .main-passage{margin:0 30px 20px 30px;padding:20px;background-color: #72b16a;width:720px;}
-        .main-passage .photo{border: 1px solid;width:120px;margin:20px;text-align:center}
-        .main-passage .photo p{text-align:center;text-indent:4px;}
+        .part{margin:0 30px 20px 30px;padding:20px;background-color: #72b16a;width:720px;}
+        .part .photo{border: 1px solid;width:120px;margin:20px;text-align:center}
+        .part .photo p{text-align:center;text-indent:4px;}
         .list li{float: none;margin:5px 20px;}
-        .main-passage table{width:100%;}
-        .main-passage table th{color:white;background-color: black;}
-        .main-passage #tab td{background:gainsboro;}
+        .part table{width:100%;}
+        .part table th{color:white;background-color: black;}
+        .part #tab td{background:gainsboro;}
 
 
 
@@ -90,19 +90,22 @@
     <!--</div>-->
 </aside>
 <div class="main">
-    <div class="main-passage">
+    <div class="part">
         <h2>文章一级标题</h2>
         <h3>文章二级标题</h3>
         <p id="word">文章作者 文章发表时间</p>
         <p>这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，
             <a href="#">这里有一个链接</a>这个段落很长，这个段落很长.
             这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长，
+            这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长,
+            这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长,
+            这个段落很长，这个段落很长，这个段落很长这个段落很长，这个段落很长，这个段落很长
         </p>
         <img src="phone.png">
         <p>这个段落很长，这个段落很长，这个段落很长，这个段落很长，<strong>这是粗体</strong></p>
     </div>
 
-    <div class="main-passage">
+    <div class="part">
         <h2>另一篇文章一级标题</h2>
         <h2>文章二级标题</h2>
         <ul class="list">
@@ -112,7 +115,7 @@
         </ul>
     </div>
 
-    <div class="main-passage">
+    <div class="part">
         <h2>图片</h2>
         <div class="photo">
             <p>好看的图片</p>
@@ -128,36 +131,16 @@
         </div>
     </div>
 
-    <div class="main-passage">
-        <p>用table做的表格(border="1")看起来有层叠的效果，不好看。下面将用边框样式做一个表格</p>
+    <div class="part">
+        <p>下面将用边框样式做一个表格</p>
         <table id="table">
-            <tr>
-                <th>表头</th>
-                <th>表头</th>
-                <th>表头</th>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td><a href="#">操作</a></td>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td>操作</td>
-            </tr>
-            <tr>
-                <td>表内容单元格</td>
-                <td>表内容单元格</td>
-                <td>操作</td>
-            </tr>
-            <tr>
-                <td>总计</td>
-                <td colspan="2">1000</td>
-            </tr>
+            <tr><th>表头</th><th>表头</th><th>表头</th></tr>
+            <tr><td>表内容单元格</td><td>表内容单元格</td><td><a href="#">操作</a></td></tr>
+            <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
+            <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
+            <tr><td>总计</td><td colspan="2">1000</td></tr>
         </table>
     </div>
-
 </div>
 </body>
 </html>

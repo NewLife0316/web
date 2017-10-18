@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        body{padding:0;margin:0;}
+        .clear{clear:both;}
+        .row{margin-bottom:20px;}
+        .part{border:#999 solid 1px;background-color: #eee;height:50px;
+        display: inline-block;margin:10px;float: left;}
+        @media(min-width:769px){
+            /*  22 = margin的值 + 边框的宽度（1*2）*/
+            .one-1{width: calc(33.33% - 22px);}
+            .one-2{width: calc(33.33% - 22px);}
+            .one-3{width: calc(33.33% - 22px);}
+
+            .two-1{width: calc(25% - 22px);}
+            .two-2{width: calc(50% - 22px);}
+            .two-3{width: calc(25% - 22px);}
+
+            .three-1{width: calc(8.33% - 22px);}
+            .three-2{width: calc(8.33% - 22px);}
+            .three-3{width: calc(16.66% - 22px);}
+            .three-4{width: calc(16.66% - 22px);}
+            .three-5{width: calc(50% - 22px);}
+        }
+        @media(max-width:769px){
+            .one-1{width: calc(50% - 22px);}
+            .one-2{width: calc(50% - 22px);}
+            .one-3{width: calc(100% - 22px);}
+
+            .two-1{width: calc(25% - 22px);}
+            .two-2{width: calc(50% - 22px);}
+            .two-3{width: calc(25% - 22px);}
+
+            .three-1{width: calc(16.66% - 22px);}
+            .three-2{width: calc(16.66% - 22px);}
+            .three-3{width: calc(66.66% - 22px);}
+            .three-4{width: calc(25% - 22px);}
+            .three-5{width: calc(25% - 22px);}
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="row clear">
+        <div class="part one-1"></div>
+        <div class="part one-2"></div>
+        <div class="part one-3"></div>
+    </div>
+    <div class="row clear">
+        <div class="part two-1"></div>
+        <div class="part two-2"></div>
+        <div class="part two-3"></div>
+    </div>
+    <div class="row clear">
+        <div class="part three-1"></div>
+        <div class="part three-2"></div>
+        <div class="part three-3"></div>
+        <div class="part three-4"></div>
+        <div class="part three-5"></div>
+    </div>
+</div>
+
+</body>
+</html>
