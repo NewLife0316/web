@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{padding:0;margin:0;}
+        body,ol ,ul,li,p h2,h3,div{padding:0;margin:0;}
         body{background:#dedede;font-family:'Microsoft YaHei';}
         #big-back{width:100%;}
         .navTop{text-decoration:none; position:relative;background-color:#4d4d4d;
@@ -14,32 +14,31 @@
         .navTop a{font-size:16px; }
         .navTop a:link{color:#fff;text-decoration:none; }
 
-        .main-passage{background-color:#ffffff;margin:20px;padding:20px;}
-        .main-passage #word,h3 {color:gray;text-indent:0;}
-        .main-passage p{text-indent:2em;}
-        .main-passage .list{margin:5px 20px}
+        .part{background-color:#ffffff;margin:20px;padding:30px;}
+        .part #word,h3 {color:gray;text-indent:0;}
+        .part p{text-indent:2em;}
+        .part .list{margin:5px 20px}
 
-        .main-passage .photo{border: 1px solid;width:120px;margin:20px;text-align:center}
-        .main-passage .photo p{text-align:center;text-indent:4px;}
+        .part .photo{border: 1px solid;width:120px;margin:20px;text-align:center}
+        .part .photo p{text-align:center;text-indent:4px;}
 
-        .main-passage ol li{font-weight:bold;}
+        .part ol li{font-weight:bold;}
 
-        .main-passage table{width:100%;}
-        .main-passage table th{color:white;background-color: black;}
-        .main-passage #tab td{background:gainsboro;}
+        .part ol{margin-left:20px;}
+        .part #table{width:100%;border-collapse: collapse;}
+        .part #table2{width:100%;}
+        .part table th{color:white;background-color: black;}
+        .part #tab td{background:gainsboro;}
 
         .back-bottom ul li{display:table;margin:20px 0 0 150px }
         .back-bottom form div .word{float:left;width:35%;text-align: right;padding-right: 15px;}
-        /*上面这句话里不能加上margin，不然就会乱。*/
         .back-bottom form div{margin:15px 0;}
         .back-bottom .submitButton{width:100%;background-color: skyblue;border-radius: 12px;height:50px;
             font-size: 20px;color: white;border:none}
-        /*去掉阴影用border：none*/
     </style>
 </head>
 <body>
 <div id="big-back">
-    <!--下面这个div有点多余，ul就是div-->
     <div class="navTop">
         <ul>
             <li><a href="#">导航链接一</a></li>
@@ -50,7 +49,7 @@
     </div>
 
     <div class="main">
-        <div class="main-passage">
+        <div class="part">
             <h2>文章一级标题</h2>
             <h3>文章二级标题</h3>
             <p id="word">文章作者 文章发表时间</p>
@@ -62,7 +61,7 @@
             <p>这个段落很长，这个段落很长，这个段落很长，这个段落很长，<strong>这是粗体</strong></p>
         </div>
 
-        <div class="main-passage">
+        <div class="part">
             <h2>另一篇文章一级标题</h2>
             <h2>文章二级标题</h2>
             <ul class="list">
@@ -72,7 +71,7 @@
             </ul>
         </div>
 
-        <div class="main-passage">
+        <div class="part">
             <h2>图片</h2>
             <div class="photo">
                 <p>好看的图片</p>
@@ -88,7 +87,7 @@
             </div>
         </div>
 
-        <div class="main-passage">
+        <div class="part">
             <h2>最后一篇文章一级标题</h2>
             <p>文章作者文章发布时间</p>
             <ol>
@@ -96,63 +95,25 @@
                 <li>排名2</li>
                 <li>排名3</li>
             </ol>
-            <table border="1">
-                <tr>
-                    <th>表头</th>
-                    <th>表头</th>
-                    <th>表头</th>
-                </tr>
-                <tr>
-                    <td>表内容单元格</td>
-                    <td>表内容单元格</td>
-                    <td><a href="#">操作</a></td>
-                </tr>
-                <tr>
-                    <td>表内容单元格</td>
-                    <td>表内容单元格</td>
-                    <td>操作</td>
-                </tr>
-                <tr>
-                    <td>表内容单元格</td>
-                    <td>表内容单元格</td>
-                    <td>操作</td>
-                </tr>
-                <tr id="tab">
-                    <td>总计</td>
-                    <td colspan="2">1000</td>
-                </tr>
+            <table id="table" border="1" >
+                <tr><th>表头</th><th>表头</th><th>表头</th></tr>
+                <tr><td>表内容单元格</td><td>表内容单元格</td><td><a href="#">操作</a></td></tr>
+                <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
+                <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
+                <tr id="tab"><td>总计</td><td colspan="2">1000</td></tr>
             </table>
         </div>
-        <div class="main-passage">
-            <p>用table做的表格(border="1")看起来有层叠的效果，不好看。下面将用边框样式做一个表格</p>
-            <table id="table">
-                <tr>
-                    <th>表头</th>
-                    <th>表头</th>
-                    <th>表头</th>
-                </tr>
-                <tr>
-                    <td>表内容单元格</td>
-                    <td>表内容单元格</td>
-                    <td><a href="#">操作</a></td>
-                </tr>
-                <tr>
-                    <td>表内容单元格</td>
-                    <td>表内容单元格</td>
-                    <td>操作</td>
-                </tr>
-                <tr>
-                    <td>表内容单元格</td>
-                    <td>表内容单元格</td>
-                    <td>操作</td>
-                </tr>
-                <tr>
-                    <td>总计</td>
-                    <td colspan="2">1000</td>
-                </tr>
+        <div class="part">
+            <p>下面将用边框样式做一个表格</p>
+            <table id="table2">
+                <tr><th>表头</th><th>表头</th><th>表头</th></tr>
+                <tr><td>表内容单元格</td><td>表内容单元格</td><td><a href="#">操作</a></td></tr>
+                <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
+                <tr><td>表内容单元格</td><td>表内容单元格</td><td>操作</td></tr>
+                <tr id="tab"><td>总计</td><td colspan="2">1000</td></tr>
             </table>
         </div>
-        <div class="main-passage">
+        <div class="part">
             <dic class="back-bottom">
                 <h2>侧栏注册窗口标题</h2>
                 <ul>
@@ -206,7 +167,6 @@
                     </form>
                     <input type="submit" class="submitButton" value="确认提交">
                 </dic>
-
             </div>
         </div>
 </div>
