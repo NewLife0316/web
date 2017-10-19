@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>污染城市列表</h3>
+<ul>
+    <li><p>北京, 90</p></li>
+    <li><p>上海, 50</p></li>
+    <li><p>福州, 10</p></li>
+    <li><p>广州, 50</p></li>
+    <li><p>成都, 90</p></li>
+    <li><p>西安, 100</p></li>
+</ul>
+<button onclick="reorder(1)">上到下排名</button>
+<button onclick="reorder()">下到上排名</button>
+<ul id="aqi-list">
+    <!--
+        <li>第一名：福州（样例），10</li>
+        <li>第二名：福州（样例），10</li>
+     -->
+</ul>
+<ul id="low-list">
+
+</ul>
+<script type="text/javascript">
+
+    var aqiData =
+        [
+            ["北京", 90],["上海", 50],["福州", 10],["广州", 50],["成都", 90],["西安", 100]
+        ];
+    function reorder(c) {
+        /*
+         在注释下方编写代码
+         遍历读取aqiData中各个城市的数据
+         将空气质量指数大于60的城市显示到aqi-list的列表中
+         */
+//        下面是取ul的id
+        var oList = document.getElementById("aqi-list");
+//        var LList = document.getElementById("low-list");
+        var arr = ["一", "二", "三", "四", "五", "六"];
+//        这里创建的arr是为了后面输出排名的时候用。
+        //sort 从大到小
+        aqiData.sort(function (a, b) {
+//            sort() 方法用于对数组的元素进行排序。
+//            这里的sort是对比二维数组中的第二个数，从大到小排列，如果写b[0]-a[0]就是对比第一个数
+            return b[1] - a[1];
+        });
+//        到这里的时候，数组大小已经比出来了
+        oList.innerHTML = "";
+//        LList.innerHTML = "";
+//        alert(aqiData);
+//        输出 西安,100,北京,90,成都,90,上海,50,广州,50,福州,10
+
+//        使用排出来的数组来进行新的比较，值大不大于60.
+        if (c == 1) {
+            for (var i = 0; i < aqiData.length; i++) {
+                if (aqiData[i][1] > 0) {
+                    //                因为数组是嵌套数组a[  ][  ],所以aqiData[i][1]代表的就是数字。
+                    var oLi = document.createElement("li");
+                    //                创建一个标签li
+                    oLi.innerHTML = '第' + arr[i] + '名：' + aqiData[i][0] + ',' + aqiData[i][1];
+                    oList.appendChild(oLi);
+                    //                上面这句话意思是，由于新建的li是游离的状态，于是要将li加入到ul。
+                }
+            }
+        }else{
+            for ( var i = aqiData.length-1 ; i >= 0; i--) {
+                if (aqiData[i][1] > 0) {
+                    var oLi = document.createElement("li");
+                    oLi.innerHTML = '第' + arr[i] + '名：' + aqiData[i][0] + ',' + aqiData[i][1];
+                    oList.appendChild(oLi);
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

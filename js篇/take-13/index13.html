@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>要求：用户可以在输入框中输入任何内容，点击“确认填写”按钮后，
+用户输入的内容会显示在“您输入的值是”文字的右边<br>
+什么意思呢？就是说你在input框中输入值，然后点击确认，下面的div会显示你输入的值。
+</p>
+<p>分这几个步骤写。1 获取input中的值，2判断input里是否有值。3将input中的值传递给div，改写div
+中的值</p>
+<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+<button id="button">确认填写</button>
+
+<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+    (function() {
+//        取input的值
+    var aqiInput = document.getElementById('aqi-input');
+//        取div
+    var aqiDisplay = document.getElementById('aqi-display');
+//        取button
+    var aqiButton = document.getElementById('button');
+    aqiButton.addEventListener('click',function(){
+    //aqiDisplay.innerText=aqiInput.value;
+    aqiDisplay.innerHTML=aqiInput.value;
+})
+   })();
+    //    (function(){xxx}) ();立即执行。是一个利用匿名函数和闭包用来执行xxx里面的代码，
+    // 同时所有的定义比如变量的作用域都在闭包里，不会污染到外部命名空间。
+    </script>
+<!--试试用dom来写-->
+<!--这个方法就是简单的取这两个id，然后将aqiInput的值传给aqiDisplay，将值写在页面上。
+    button还需要添加一个onclick = test（）
+-->
+        <!--
+        function test(){
+            var aqiInput = document.getElementById('aqi-input');
+            var aqiDisplay = document.getElementById('aqi-display');
+            aqiDisplay.innerHTML =aqiInput.value ;
+         }
+         -->
+</body>
+</html>
